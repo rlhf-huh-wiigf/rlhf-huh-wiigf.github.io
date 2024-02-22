@@ -23,12 +23,12 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#dates">Important Dates</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#call">Call for Contributions</a></li>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#dates">Important Dates</a></li>
                                 <li><a class="dropdown-item" href="#schedule">Schedule</a></li>
                                 <li><a class="dropdown-item" href="#oc">Organising Committee</a></li>
                             </ul>
@@ -45,25 +45,73 @@
             </div>
         </nav>
         <!-- Workshop Overview -->
-        <section class="py-5" id="about">
+        <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://i.kym-cdn.com/photos/images/newsfeed/002/546/575/409.png" alt="..." />
                         <a href="https://knowyourmeme.com/photos/2546575-shoggoth-with-smiley-face-artificial-intelligence" target="_blank" >Image source</a></div>
                     <div class="col-md-6">
-                        <div class="small ">Co-located with Hybrid-Human Artificial Intelligence Conference 2024</div>
+                        <div class="medium">Interrogating claims about RLHF through a multidisciplinary lens.</div>
                         <h1 class="display-5 fw-bolder">RLHF (what is it good for?)</h1>
                         <div class="fs-5 mb-5">
                             <!-- <span class="text-decoration-line-through">$45.00</span> -->
-                            <span>A workshop on interrogating what RLHF is really good for.</span>
+                            <span>Co-located with <a href="https://hhai-conference.org/2024/" target="_blank">Hybrid Human-Artificial Intelligence Conference 2024</a></span>
                         </div>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+                        <p class="lead">
+
+                            The goal of this workshop is to bring together researchers, industry practitioners, and policy makers to look at the ethical, legal, and societal aspects of how RLHF is developed and deployed.
+                            What we need is to open up a broader debate, both critical and more imaginative, of what forms of feedback we need to safeguard the development and use of LLMs, and what open requirements we can expect to see from advances in RLHF.
+
+
+			            </p>
                         <div class="d-flex">
-                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                                <!-- <i class="bi-cart-fill me-1"></i> -->
-                                Call for Papers
-                            </button>
+                            <a href="#call">
+                                <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                                    <!-- <i class="bi-cart-fill me-1"></i> -->
+                                    Call for Papers
+                                </button>
+                            </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+
+        <section class="py-5" id="about">
+            <div class="container px-4 px-lg-5 my-2">
+                <div class="row gx-4 gx-lg-5">
+                    <h2 class="fw-bolder mb-4">About</h2>
+                    <div class="fs-5 mb-5">
+                        <p>
+
+                            Reinforcement Learning with Human Feedback (RLHF) is used to fine-tune Large Language Models (LLMs) to 'align to human values and preferences' and improve the 'harmlessness, helpfulness, and honesty' of such models.
+                            RLHF has been credited for the successes seen in OpenAI’s ChatGPT1, Anthropic’s Claude 22, and Meta’s Llama 23, to name a few.
+                            LLMs fine-tuned with RLHF have shown improvements on a wide variety of benchmarks (Achiam et al., 2023; Touvron et al., 2023), opening up for applications in everything from the wide-spread use of chatbots to medicine (Nori et al., 2023; Waisberg et al., 2023).
+<br><br>
+                            While RLHF has lead to technical achievements in model performance that need acknowledging, it is still early days for these models and we lack a proper understanding of the importance of RLHF and feedback more broadly in improving language technology.
+                            For example, learning from feedback has been framed as a means of efficiently exercising human oversight over AI systems’ learning trajectory (Christiano et al., 2017).
+                            However, there is an increasing body of work criticising RLHF (see e.g. (Casper et al., 2023; Hosking et al., 2023; Wei et al., 2023)), suggesting that many of the non-technical issues, such as harmlessness, cannot be solved with this type of feedback, especially not on a global scale.
+                            When we widen the scope, and invite more critical perspectives from across several disciplines, the oversimplification of what the technique actually produces becomes more evident.
+                            Studying the method in an interdisciplinary fashion may allow us as researchers to course correct, and consider where RL from Feedback (RLF) can be applied such that it becomes truly useful.
+<br><br>
+                            The goal of this workshop is to bring together researchers, industry practitioners, and policy makers to look at the ethical, legal, and societal aspects of how RLHF are developed and deployed.
+                            What we need is to open up a broader debate, both critical and more imaginative, of what forms of feedback we need to safeguard the development and use of LLMs, and what open requirements we can expect to see from advances in RLHF.
+
+<br><br>
+                            Here are some of the questions that we hope this workshop will shed some light on:
+                            <ul>
+                                <li>Is RHLF truly a sufficient control mechanism for reducing or eliminating the harmful aspects of LLMs? What role does the context within which they are situated play in evaluating harmlessness and safety in general?</li>
+                                <li>What considerations for “data-production dispositif” are acknowledged and accounted for? What can we learn from other examples of crowdsourcing?</li>
+                                <li>From a bias perspective, what issues are there with RLHF in practice (e.g. instructions to crowdsource workers)? </li>
+                                <li>What can we learn of LLMs and RLHF from open sourcing in, e.g., operating systems and communication platforms?</li>
+                                <li>What are the ethical considerations in terms of, e.g., human autonomy, dignity, and control?</li>
+                                <li>Given the inscrutable size of LLMs, to what extent is RLHF just adding to an already overly complex technology? What are the limits of complexity with regards to safeguarding crucial values in the integration of RLHF+LLM in public contexts?</li>
+                                <li>What other forms of feedback are currently missing to address relevant value issues?</li>
+                                <li>How does the centralization of production of “RLHF knowledge” in corporate organizations affect these value issues?</li>
+                            </ul>
+			            </p>
                     </div>
                 </div>
             </div>
@@ -76,14 +124,46 @@
                 <div class="row gx-4 gx-lg-5">
                     <h2 class="fw-bolder mb-4">Call for Contributions</h2>
                     <div class="fs-5 mb-5">
-                        <!-- <span class="text-decoration-line-through">$45.00</span> -->
-                        <span>This is a call for contributions 🤙</span>
+                        <p >
+                            We encourage submissions of two forms; 2 page extended abstracts, and previously published work.
+                            The impact and significance of LLMs spans a wide range of disciplines, and we are looking for submissions from researchers and practitioners from (non-exhaustive list) computing science, cognitive science, philosophy, social science, law and policy, human-computer interaction.
+                            Since the development of these methods is driven in large part by industry, we also want to include the experience of industry experts.
+                                <ul>
+                                    <li>Positions detailing 'What is it good for?'</li>
+                                    <li>Socio-technical perspective on the harms or benefits of RLHF</li>
+                                    <li>Positions on RLHF from human-computer interaction, philosophy, cognitive science, psychology</li>
+                                    <li>Case studies of applications of RLHF</li>
+                                    <li>Experience working with RLHF in industry</li>
+                                    <li>Extended abstracts describing Work in Progress</li>
+                                    <li>Previously published work related to RLHF</li>
+                                </ul>
+                            </p>
                     </div>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="dates">
+            <div class="container px-4 px-lg-5 my-2">
+                <div class="row gx-4 gx-lg-5">
+                    <h2 class="fw-bolder mb-4">Important Dates</h2>
+                    <div class="fs-5 mb-5">
+                        <p class="lead">
+
+                            <ul>
+                                <li><b>Submission Deadline:</b> April 17, 2024 (AoE)</li>
+                                <li><b>Notification of Acceptance:</b> May 1st, 2024 (AoE)</li>
+                                <li><b>Workshop time and date:</b> HHAI 2024 (Malmö, Sweden): June 11, 2024, 9AM-17PM</li>
+                            </ul>
+    
+                        </p>
+                    </div>
+                    
                 </div>
             </div>
 
-        </section>
+	</section>
 
 
         <!-- Schedule Overview -->
@@ -92,24 +172,24 @@
 
             <div class="container container px-4 px-lg-5 my-2 z-index-1">
                 <div class="row">
-                    <h2 class="fw-bolder mb-4">Tentative Schedule</h2>
-                        
+                    <h2 class="fw-bolder mb-4">Schedule Coming Soon</h2>
+
                         <div class="col-lg-7 col-xl-6">
                             <div data-aos="fade-up" class="tab-content aos-init aos-animate" id="myTabContent">
                                 <div class="tab-pane fade active show" id="day1" role="tabpanel" aria-labelledby="d1-tab">
                                     <ul class="pt-4 list-unstyled mb-0">
                                         <li class="d-flex flex-column flex-md-row py-4">
-                                            <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">9:00
-                                                AM - 10:00 AM</span>
+                                            <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">8:00
+                                                AM - 9:00 AM</span>
                                             <div class="flex-grow-1 ps-4 border-start border-3">
                                                 <h4>Registration and Coffee</h4>
-                                                <p class="mb-0">
+                                                <!-- <p class="mb-0">
                                                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                                                     officia deserunt mollit anim id est laborum.
-                                                </p>
+                                                </p> -->
                                             </div>
                                         </li>
-                                        <li class="d-flex flex-column flex-md-row py-4">
+                                        <!-- <li class="d-flex flex-column flex-md-row py-4">
                                             <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">10:00
                                                 AM - 11:00 AM</span>
                                             <div class="flex-grow-1 ps-4 border-start border-3">
@@ -130,59 +210,30 @@
                                                     officia deserunt mollit anim id est laborum.
                                                 </p>
                                             </div>
-                                        </li>
+                                        </li> -->
                                         <li class="d-flex flex-column flex-md-row py-4">
-                                            <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">12:30
-                                                PM - 1:30 PM</span>
+                                            <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">12:00
+                                                PM - 1:00 PM</span>
                                             <div class="flex-grow-1 ps-4 border-start border-3">
                                                 <h4>Lunch break</h4>
-                                                <p class="mb-0">
-                                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                                    officia deserunt mollit anim id est laborum.
-                                                </p>
+                                                <!-- <p class="mb-0">
+                                                    Location.
+                                                </p> -->
+                                            </div>
+                                        </li>
+                                        <li class="d-flex flex-column flex-md-row py-4">
+                                            <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">16:30
+                                                PM - 17:00 PM</span>
+                                            <div class="flex-grow-1 ps-4 border-start border-3">
+                                                <h4>Wrap Up</h4>
+                                                <!-- <p class="mb-0">
+                                                    Location.
+                                                </p> -->
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="tab-pane fade" id="day2" role="tabpanel" aria-labelledby="d2-tab">
-                                    <ul class="pt-4 list-unstyled mb-0">
-                                        <li class="d-flex flex-column flex-md-row py-4">
-                                            <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">9:00
-                                                AM - 10:00 AM</span>
-                                            <div class="flex-grow-1 ps-4 border-start border-3">
-                                                <h4>Excepteur sint occaecat</h4>
-                                                <p class="mb-0">
-                                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                                    officia deserunt mollit anim id est laborum.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex flex-column flex-md-row py-4">
-                                            <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">10:00
-                                                AM - 11:00 AM</span>
-                                            <div class="flex-grow-1 ps-4 border-start border-3">
-                                                <h4>Culpa qui officia deserunt</h4>
-                                                <p class="mb-0">
-                                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                                    officia deserunt mollit anim id est laborum.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex flex-column flex-md-row py-4">
-                                            <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">11:00
-                                                AM - 12:30 PM</span>
-                                            <div class="flex-grow-1 ps-4 border-start border-3">
-                                                <h4>Excepteur sint occaecat cupidatat</h4>
-                                                <p class="mb-0">
-                                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                                    officia deserunt mollit anim id est laborum.
-                                                </p>
-                                            </div>
-                                        </li>
-                          
-                                   
-                                    </ul>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -194,7 +245,7 @@
             <div class="container px-4 px-lg-6 mt-5">
                 <h2 class="fw-bolder mb-4">Organising Committee</h2>
                 <div class="row gx-4 gx-lg-4 row-cols-2 row-cols-md-3 row-cols-xl-6 justify-content-center">
-                    
+
                     <div class="col p-2">
                         <div class="card h-75 border-0 border-bottom border-primary shadow-sm overflow-hidden">
                             <!-- Product image-->
@@ -245,7 +296,7 @@
                             </div> -->
                         </div>
                     </div>
-                    
+
                     <div class="col p-2">
                         <div class="card h-75 border-0 border-bottom border-primary shadow-sm overflow-hidden">
                             <!-- Product image-->
@@ -308,7 +359,7 @@
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; None 2024</p></div>
+            <div class="container"><p class="m-0 text-center text-white">Last updated 22/02/2024</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
